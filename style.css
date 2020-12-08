@@ -38,6 +38,7 @@ img {
     width: 100%;
 }
 
+.hlavni-text,
 .leva,
 .prava {
     padding: 1.5rem;
@@ -104,8 +105,12 @@ li {
     display: inline-block;
     width: 100%;
     text-align: center;
-    border-bottom: 0.3px rgba(116, 116, 116, 0.1) solid;
     padding: 0.2rem;
+    border-bottom: 0.3px rgba(116, 116, 116, 0.1) solid;
+}
+
+li:nth-child(4)  {
+    border-bottom: none;
 }
 
 .menu {
@@ -239,6 +244,10 @@ h2:after {
     li:nth-child(3),
     li:nth-child(4)  {
         border-left: 0.3px rgba(116, 116, 116, 0.1) solid;
+    }
+
+    li:nth-child(4)  {
+        border-bottom: 0.3px rgba(116, 116, 116, 0.1) solid;
     }
 
 }
@@ -386,16 +395,16 @@ h2:after {
         padding-top: 1rem;
         padding-bottom: 1rem;}
 
-        .galerie .popisek {
-            font-size: 1rem;
-            color: white;
-         }
-          
-         .galerie .popisek a,
-         .galerie .popisek-copy {
-             font-size: 0.6rem;
-             color: white;
-          }
+    .galerie .popisek {
+        font-size: 1rem;
+        color: white;
+    }
+    
+    .galerie .popisek a,
+    .galerie .popisek-copy {
+        font-size: 0.6rem;
+        color: white;
+    }
 
     .leva p {
         padding-right: 25% ;
@@ -406,6 +415,8 @@ h2:after {
     }
 
     .kontejner-na-menu-a-uvod {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
         display: flex;
     }
 
@@ -413,7 +424,6 @@ h2:after {
         width: 100%;
         padding-right: 1.5rem;
     }
-
 
 
     .menu{
@@ -432,32 +442,30 @@ h2:after {
     }
 
     li:nth-child(2),
-    li:nth-child(3),
-    li:nth-child(4)  {
+    li:nth-child(3)  {
         border-bottom: 0.3px rgba(116, 116, 116, 0.1) solid;
     }
 
-
+   
 
     .hlavicka {
-    max-width: none;
-    min-width: 100%;
-    box-shadow: none;
-    padding-left: 30%;
-    padding-right: 30%;
-    
+        min-width: 100%;
+        box-shadow: none;
+        display: block;
     }
 
-    p .hlavicka {
-        max-width: 50%;
+    .hlavicka .titulek,
+    .hlavicka .perex,
+    .hlavicka .autor {
         margin: auto;
-        padding-left: 2rem;
-        margin-right: 50rem;
-
+        position: relative;
+        max-width: 961px;
     }
 
     .platno{
         margin-top: -2rem
     }
 
+    body {
+        margin: 0}
 }
